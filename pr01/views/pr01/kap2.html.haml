@@ -1,0 +1,38 @@
+%h1 Kapitel 2
+
+%p Dieses Kapitel beschäftigt sich mit Verweisen.
+%h2#Abschnitt1 Abschnitt 1
+
+%p Der Abschnitt 1 beschäftigt sich hauptsächlich mit internen Verweisen.
+
+%p= link_to "Ich bin ein interner Verweis auf den Abschnitt 2", "#Abschnitt2"
+
+%p= link_to "Ich bin ein interner Verweis auf den Anfang dieser Datei","kap2"
+
+%p= link_to "Ich bin ein interner Verweis auf das Ende dieser Datei","#end"
+
+%p= link_to "Ich bin ein Verweis auf den Absatz mit dem kursiven Wort in der Einleitung.","einleitung#italic"
+
+%h2#Abschnitt2 Abschnitt 2
+
+%p Der Abschnitt 2 beschäftigt sich hauptsächlich mit externen Verweisen.
+
+%p= link_to "Ich bin ein interner Verweis auf Abschnitt 1", "#Abschnitt1"
+
+%p= link_to "Ich bin ein Verweis auf die Homepage der HS RheinMain", "https://hs-rm.de"
+
+%p= link_to "Ich bin ein Verweis auf die Studiengänge des Fachbereichs DCSM","https://www.hs-rm.de/de/fachbereiche/design-informatik-medien/studiengänge/"
+
+%p= link_to "Hier einen Verweis zum Versenden von Mail an sich selbst einfuegen", "mailto:news@lmaos.de"
+
+%p= link_to "Ich bin ein Verweis auf den (X)HTML-Validierer des W3C", "https://validator.w3.org"
+
+%p= link_to "Ich bin ein Verweis auf den oeffentlichen Bereich des ftp-Servers des Heise-Verlags", "ftp://ftp.heise.de/pub/"
+
+%p= link_to "Ich bin ein Verweis auf redback.gif", "redback.gif"
+
+%p= link_to "Ich bin ein interner Verweis auf den Anfang dieser Datei", "#" 
+
+%p= link_to "Ich bin ein Verweis auf das Inhaltsverzeichnis", "index"
+
+%p#end Ich bin das Ende.
