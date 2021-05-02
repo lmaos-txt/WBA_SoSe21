@@ -1,0 +1,22 @@
+!!!
+%html
+	%head
+		%title="WBA-Übung 02" 
+		%meta{:name=> "charset", :content=> "UTF-8"}
+		%meta{:name=> "ROBOTS", :content =>"NOINDEX, NOFOLLOW"}
+		= stylesheet_link_tag "application"
+	%body
+		%div#logo= link_to image_tag("hs-rm.gif", alt:"HS-RM Logo"), "https://hs-rm.de"
+		
+		%h1#headline 
+			WBA-Praktikum 02
+		%div#sidebar
+			%ul
+				%li=link_to "EINLEITUNG", "einleitung"
+				%li=link_to "KAPITEL 1", "kap1"
+				%li=link_to "KAPITEL 2", "kap2"
+				%li=link_to "TABELLE (ANHANG)", "tab"
+		%div#main.neutral= yield
+		%div#footer 
+			© 2021 Hochschule Rhein-Main - 
+			%span= link_to "LMAOS", "https://lmaos.de"
